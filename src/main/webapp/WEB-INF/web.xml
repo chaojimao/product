@@ -1,0 +1,82 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+<!--   读取spring配置文件 -->
+  <context-param> 
+     <param-name>contextConfigLocation</param-name>
+     <param-value>
+          classpath:spring-common.xml
+     </param-value>
+  </context-param>
+  <filter>
+  	<filter-name>UserFilter</filter-name>
+  	<display-name>UserFilter</display-name>
+  	<description></description>
+  	<filter-class>com.filter.UserFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>UserFilter</filter-name>
+  	<url-pattern>/web/page/*</url-pattern>
+  </filter-mapping>
+<!--   Spring监听器  -->
+  <listener>
+      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+<!--   Spring MVC Servlet -->
+<servlet>
+     <servlet-name>Spring-Servlet</servlet-name>
+     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> <!-- 转发器中转 -->
+     <init-param>
+         <param-name>contextConfigLocation</param-name>
+         <param-value>
+              classpath:spring-servlet.xml
+         </param-value>
+     </init-param>
+     <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>A2</servlet-name>
+    <servlet-class>com.Code</servlet-class>
+    <init-param>
+      <param-name>count</param-name>
+      <param-value>4</param-value>
+    </init-param>
+    <init-param>
+      <param-name>width</param-name>
+      <param-value>75</param-value>
+    </init-param>
+    <init-param>
+      <param-name>height</param-name>
+      <param-value>30</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+  	<servlet-name>Code</servlet-name>
+  	<display-name>Code</display-name>
+  	<description></description>
+  	<servlet-class>com.Code</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>A2</servlet-name>
+    <url-pattern>/Chaojimao2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Code</servlet-name>
+  	<url-pattern>/Code</url-pattern>
+  </servlet-mapping>
+      <servlet-mapping>
+     <servlet-name>Spring-Servlet</servlet-name>
+     <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

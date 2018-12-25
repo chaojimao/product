@@ -1,0 +1,1086 @@
+@charset "utf-8";
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+.fy-home{
+	background-color: #f0f0f0;
+}
+
+.fy-header {
+	width: 100%;
+	height: 192px;
+	background-color: white;
+}
+
+.fy-header .top {
+	width: 100%;
+	height: 30px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.fy-header .top .ctx {
+	width: 1200px;
+	height: 100%;
+	line-height: 30px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.fy-header .top .ctx a {
+	float: right;
+	margin-left: 14px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.fy-header .top .ctx a icon {
+	width: 16px;
+	height: 16px;
+	background-image: url(/webm/web/common/img/login.png);
+	background-position: center;
+	background-size: 100% 100%;
+	display: inline-block;
+	margin-bottom: -2px;
+	margin-right: 2px;
+}
+
+.fy-header .top .ctx a:hover {
+	color: #d81e06;
+}
+
+.fy-header .top .ctx a:hover icon {
+	background-image: url(/webm/web/common/img/login_light.png);
+}
+
+.fy-header .top .ctx a .icon-login {
+	background-image: url(/webm/web/common/img/login.png);
+}
+
+.fy-header .top .ctx a:hover .icon-login {
+	background-image: url(/webm/web/common/img/login_light.png);
+}
+
+.fy-header .top .ctx a .icon-logout {
+	background-image: url(/webm/web/common/img/logout.png);
+}
+
+.fy-header .top .ctx a:hover .icon-logout {
+	background-image: url(/webm/web/common/img/logout_light.png);
+}
+
+.fy-header .top .ctx a .icon-register {
+	background-image: url(/webm/web/common/img/register.png);
+}
+
+.fy-header .top .ctx a:hover .icon-register {
+	background-image: url(/webm/web/common/img/register_light.png);
+}
+
+.fy-header .top .ctx a .icon-order {
+	background-image: url(/webm/web/common/img/order.png);
+}
+
+.fy-header .top .ctx a:hover .icon-order {
+	background-image: url(/webm/web/common/img/order_light.png);
+}
+
+.fy-header .bottom {
+	width: 1200px;
+	height: 119px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.fy-header .bottom .logo {
+	float: left;
+	height: 47px;
+	margin-top: 36px;
+}
+
+.fy-header .bottom .ad {
+	float: right;
+	height: 69px;
+	margin-top: 25px;
+}
+
+.fy-header .menu {
+	width: 100%;
+	height: 40px;
+	border-bottom: 2px solid #d81e06;
+}
+
+.fy-header .menu .ctx {
+	width: 1200px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+
+.fy-header .menu .ctx .bigmenu {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	background-color: #D81E06;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	width: 200px;
+}
+
+.fy-header .menu .ctx .bigmenu img {
+	width: 18px;
+	height: 18px;
+	margin-bottom: -3px;
+	margin-left: 4px;
+}
+
+.fy-header .menu .ctx .homemenu {
+	float: left;
+	padding: 0px 80px;
+	height: 40px;
+	line-height: 40px;
+	color: #D81E06;
+	font-size: 16px;
+}
+
+.fy-header .menu .ctx .cart {
+	float: right;
+	padding: 0px 40px;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	background-color: #D81E06;
+	text-align: center;
+	font-size: 16px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.fy-header .menu .ctx .cart img {
+	width: 18px;
+	height: 18px;
+	margin-bottom: -3px;
+	margin-right: 4px;
+}
+
+.fy-header .menu .floatmenu {
+	position: absolute;
+	left: 0px;
+	width: 198px;
+	border: 1px solid #D81E06;
+	height: 440px;
+	top: 0px;
+	display: none;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.fy-header .menu .floatmenu .padding-top {
+	margin-top: 40px;
+	height: 400px;
+	overflow: hidden;
+	width: 100%;
+	background-color: white;
+}
+
+.fy-header .menu .floatmenu .padding-top .box {
+	border-bottom: 1px dashed gainsboro;
+	padding: 10px 0;
+}
+
+.fy-header .menu .floatmenu .padding-top .box .title {
+	width: 178px;
+	margin-left: 5px;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.fy-header .menu .floatmenu .padding-top .box .link {
+	width: 188px;
+	margin-left: 5px;
+}
+
+.fy-header .menu .floatmenu .padding-top .box .link a {
+	line-height: 22px;
+	color: gray;
+	font-size: 12px;
+	margin-right: 4px;
+	cursor: pointer;
+}
+
+.fy-header .menu .floatmenu .padding-top .box .link a:hover {
+	color: black;
+}
+
+.fy-swiper-ad {
+	width: 1200px;
+	margin: 0px auto;
+	height: 400px;
+	overflow: hidden;
+}
+
+.fy-swiper-ad .ad {
+	width: 1000px;
+	height: 400px;
+	float: right;
+}
+
+.fy-swiper-ad .ad img{
+	width: 100%;
+	height: 100%;
+}
+
+.fy-home-ad {
+	width: 1200px;
+	margin: 0px auto;
+	margin-top: 20px;
+	height: 180px;
+	overflow: hidden;
+}
+
+.fy-home-ad a {
+	width: 400px;
+	float: left;
+	height: 180px;
+}
+
+.fy-home-ad a img {
+	width: 100%;
+	height: 100%;
+}
+
+.fy-home-title {
+	width: 1200px;
+	margin: 0 auto;
+	height: 64px;
+	margin-top: 20px;
+	overflow: hidden;
+	background-image: url(/webm/web/common/img/home_title_bg.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.fy-home-title .text {
+	width: 300px;
+	height: 64px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.fy-home-title .text .title {
+	height: 38px;
+	line-height: 38px;
+	font-size: 28px;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.fy-home-title .text .en {
+	height: 26px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #DCDCDC;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.fy-home-product {
+	width: 1200px;
+	margin: 0 auto;
+	height: 440px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+.fy-home-product .hot {
+	float: left;
+	width: 320px;
+	height: 440px;
+}
+
+.fy-home-product .hot img {
+	width: 100%;
+	height: 100%;
+}
+
+.fy-home-product .other {
+	float: left;
+	width: 880px;
+	height: 440px;
+	overflow: hidden;
+}
+
+.fy-home-product .other a {
+	float: left;
+	height: 219px;
+	border: 1px solid #eaeaea;
+	border-top: none;
+	border-left: none;
+	overflow: hidden;
+	background-color: white;
+}
+
+.fy-home-product .other .big {
+	width: 439px;
+}
+
+.fy-home-product .other .small {
+	width: 219px;
+}
+
+.fy-home-product .other .big img {
+	width: 190px;
+	height: 190px;
+	float: left;
+	margin: 15px;
+}
+
+.fy-home-product .other .big .left {
+	width: 190px;
+	margin-left: 15px;
+	float: left;
+	height: 190px;
+	margin-top: 15px;
+}
+
+.fy-home-product .other .big .title {
+	width: 190px;
+	text-align: center;
+	float: left;
+	margin-top: 70px;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 38px;
+	line-height: 38px;
+}
+
+.fy-home-product .other .big .price {
+	width: 190px;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 38px;
+	line-height: 38px;
+	color: #D81E06;
+}
+
+.fy-home-product .other .big .line {
+	width: 190px;
+	text-align: center;
+	float: left;
+	height: 6px;
+	background-image: url(/webm/web/common/img/bor-w.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fy-home-product .other .small img {
+	width: 131px;
+	height: 131px;
+	float: left;
+	margin-left: 44px;
+	margin-top: 15px;
+}
+
+
+.fy-home-product .other .small .title {
+	width: 190px;
+	text-align: center;
+	float: left;
+	font-size: 16px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 38px;
+	line-height: 38px;
+	margin-left: 15px;
+}
+
+.fy-home-product .other .small .price {
+	width: 190px;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 22px;
+	line-height: 22px;
+	color: #D81E06;
+	margin-left: 15px;
+}
+
+.fy-bottom{
+	margin-top: 20px;
+	width: 100%;
+	border-top: 2px solid #D81E06;
+	text-align: center;
+}
+.fy-bottom span{
+	font-size: 12px;
+	display: block;
+	text-align: center;
+	margin: 50px auto;
+	
+}
+
+.fy-list-top{
+	width: 1200px;
+	margin: 20px auto;
+	height: 31px;
+	overflow: hidden;
+}
+.fy-list-top a{
+	float: left;
+	padding:6px 12px;
+	border: 1px solid #808080;
+	font-size: 12px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.fy-list-top a icon{
+	width: 10px;
+	height: 10px;
+	display:inline-block;
+	background-image: url(/webm/web/common/img/rank.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	margin-bottom: -1px;
+	margin-left: 2px;
+}
+.fy-list-top a:hover,.fy-list-top .active{
+	background-color: #D81E06;
+	border: 1px solid #D81E06;
+	color: white;
+}
+.fy-list-top a:hover icon,.fy-list-top .active icon{
+	background-image: url(/webm/web/common/img/rank_white.png);
+}
+.fy-list-top span{
+	float: left;
+	display: block;
+	line-height: 31px;
+}
+.fy-list-top .right{
+	float: right;
+	margin-right: 0px;
+	margin-left: 5px;
+}
+.fy-list{
+	width: 1200px;
+	overflow: hidden;
+	height: auto;
+	margin: 0px auto;
+}
+.fy-list a{
+	float: left;
+	width: 238px;
+	height: 317px;
+	border: 1px solid white;
+	overflow: hidden;
+}
+.fy-list a img{
+	width: 208px;
+	height: 208px;
+	margin: 15px;
+}
+.fy-list a .title{
+	width: 208px;
+	text-align: center;
+	line-height: 34px;
+	margin-left: 15px;
+	height: 34px;
+	overflow: hidden;
+}
+.fy-list a .price{
+	width: 208px;
+	text-align: center;
+	line-height: 24px;
+	color: #D81E06;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+.fy-list a:hover{
+	border: 1px solid #DCDCDC;
+}
+
+.fy-pro{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: auto;
+	overflow: hidden;
+}
+.fy-pro .left{
+	float: left;
+	width: 420px;
+	height: 525px;
+	overflow: hidden;
+}
+.fy-pro .left .pic{
+	width: 418px;
+	height: 418px;
+	border: 1px solid #DCDCDC;
+}
+.fy-pro .left .pic img{
+	width: 100%;
+	height: 100%;
+}
+.fy-pro .left .sub-pic{
+	margin-top: 5px;
+	width: 100%;
+	height: 100px;
+}
+.fy-pro .left .sub-pic img{
+	height: 98px;
+	width: 98px;
+	border: 1px solid #DCDCDC;float: left;margin-right: 5px;
+	cursor: pointer;
+}
+.fy-pro .right{
+	float: right;
+	width: 550px;
+	overflow: hidden;
+}
+.fy-pro .right .title{
+	line-height: 35px;
+	font-size: 22px;
+	display: block;
+}
+.fy-pro .right .des{
+	line-height: 20px;
+	margin-top: 8px;
+	color: #aaa;
+	font-size: 12px;
+	
+}
+.fy-pro .right .line{
+	width: 100%;
+	height: 2px;
+	background-color: #808080;
+	margin-top: 8px;
+}
+.fy-pro .right .params{
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	font-size: 12px;
+	color: #aaa;
+	line-height: 50px;
+}
+
+.fy-pro .right .params .price{
+	font-size: 22px;
+	color: #D81E06;
+}
+.fy-pro .right .params .oldprice{
+	text-decoration: line-through;
+}
+.fy-pro .right .params .input{
+	display: inline-block;
+	width: 112px;
+	height: 26px;
+	border: 1px solid #AAAAAA;
+	overflow: hidden;
+	margin-bottom: -8px;
+}
+.fy-pro .right .params .input span{
+	display: block;
+	float: left;
+	height: 26px;
+	width: 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 16px;
+	color: black;
+	cursor: pointer;
+}
+.fy-pro .right .params .input input{
+	width: 58px;
+	height: 26px;
+	outline: none;
+	border: 1px solid #AAAAAA;
+	border-top: none;
+	border-bottom: none;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.fy-pro .bigbt{
+	float: left;
+	width: 190px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	background-color: #D81E06;
+	margin-right: 5px;
+	font-size: 18px;
+}
+.fy-detail{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+	height: auto;
+}
+.fy-detail .left{
+	float: left;
+	width: 782px;
+	overflow: hidden;
+}
+.fy-detail .left .title{
+	width: 780px;
+	height: 40px;
+	border: 1px solid #AAAAAA;
+	
+}
+.fy-detail .left .title span{
+	width: 180px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	border-right: 1px solid #AAAAAA;
+	cursor: pointer;
+}
+.fy-detail .left .title .active{
+	background-color: #D81E06;
+	color: white;
+}
+.fy-detail .left .detail{
+	width: 780px;
+	margin-left: 1px;
+	overflow: hidden;
+	min-height: 200px;
+}
+.fy-detail .left .detail img{
+	width: 100%;
+}
+.fy-detail .right{
+	float: right;
+	width: 200px;
+	overflow: hidden;
+	border: 1px solid #AAAAAA;
+}
+.fy-detail .right .top{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #D81E06;
+	text-align: center;
+}
+.fy-detail .right a{
+	width: 100%;
+	float: left;
+}
+.fy-detail .right a img{
+	width: 198px;
+	height: 198px;
+	margin-left: 1px;
+}
+.fy-detail .right a .title{
+	width: 180px;
+	margin-left: 10px;
+	line-height: 32px;
+}
+.fy-detail .right a .price{
+	margin-left: 10px;
+	line-height: 24px;
+	color: #D81E06;
+}
+
+
+.fy-cart-title{
+	height: 40px;
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 40px;
+	margin-top: 20px;
+}
+.fy-cart-table{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 1px solid #DCDCDC;
+}
+.fy-cart-table .row-1{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+}
+.fy-cart-table .row-1 .col{
+	width: 120px;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fy-cart-table .row-2{
+	width: 100%;
+	height: 130px;
+	border-top: 1px solid #DCDCDC;
+	overflow: hidden;
+	
+}
+.fy-cart-table .row-2 .col{
+	width: 120px;
+	height: 130px;
+	line-height: 130px;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+}
+.fy-cart-table .row-1 .col-1,.fy-cart-table .row-2 .col-1{
+	width: 120px;
+}
+.fy-cart-table .row-1 .col-2,.fy-cart-table .row-2 .col-2{
+	width: 550px;
+}
+.fy-cart-table .row-1 .col-4,.fy-cart-table .row-2 .col-4{
+	width: 170px;
+}
+.fy-cart-table .row-1 .col-5,.fy-cart-table .row-2 .col-5{
+	width: 140px;
+}
+.fy-cart-table .row-1 .col-6,.fy-cart-table .row-2 .col-6{
+	width: 100px;
+}
+.fy-cart-table .row-2 .col-2 a{
+	height: 60px;
+	margin-top: 35px;
+	overflow: hidden;
+	width: 500px;
+	text-align: left;
+	display: block;
+	line-height: 60px;
+	margin-left: 40px;
+	font-size: 12px;
+}
+.fy-cart-table .row-2 .col-2 img{
+	width: 60px;	
+	height: 60px;
+	margin-bottom: -2px;
+}
+.fy-cart-table .row-2 .col-4 .count{
+	display: inline-block;
+	width: 112px;
+	height: 26px;
+	border: 1px solid #AAAAAA;
+	overflow: hidden;
+	margin-bottom: -8px;
+}
+.fy-cart-table .row-2 .col-4 .count span{
+	display: block;
+	float: left;
+	height: 26px;
+	width: 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 16px;
+	color: black;
+	cursor: pointer;
+}
+.fy-cart-table .row-2 .col-4 .count input{
+	width: 58px;
+	height: 26px;
+	outline: none;
+	border: 1px solid #AAAAAA;
+	border-top: none;
+	border-bottom: none;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.fy-cart-btm{
+	width: 1200px;
+	margin: 20px auto;
+	height: 60px;
+	line-height: 60px;
+}
+.fy-cart-btm .small{
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	
+	
+}
+.fy-cart-btm .big{
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	color: #D81E06;
+	font-size: 22px;
+	margin-right: 10px;
+}
+.fy-cart-btm .submit{
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	color: white;
+	background-color: #D81E06;
+	width: 120px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.fy-orderadd-title{
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 24px;
+	line-height: 100px;
+}
+.fy-orderadd-subtitle{
+	width: 1200px;
+	margin: 20px auto;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 2px solid #DCDCDC;
+}
+.fy-orderadd-subtitle span{
+	border-left: 2px solid #D81E06;
+	font-size: 20px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.fy-orderadd-form{
+	width: 1200px;
+	margin: 0 auto;
+}
+.fy-orderadd-form .control{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	margin:5px 10px;
+}
+.fy-orderadd-form .control span{
+	float: left;
+	width: 80px;
+	text-align: right;
+	font-size: 12px;
+	margin-right: 10px;
+}
+.fy-orderadd-form .control input,.fy-orderadd-form .control select{
+	outline: none;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	width: 227px;
+	height: 42px;
+	float: left;
+	margin-right: 10px;
+	padding-left: 10px;
+}
+.fy-orderadd-form .control select{
+	width: 111px;
+}
+.fy-orderadd-form .control .lg{
+	width: 360px;
+}
+.fy-orderadd-table .row-1 .col-2,.fy-orderadd-table .row-2 .col-2{
+	width: 770px;
+}
+
+.fy-myorder{
+	width: 1200px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.fy-myorder .left{
+	float: left;
+	width: 202px;
+}
+.fy-myorder .left .box{
+	width: 200px;
+	border: 1px solid #DCDCDC;
+	overflow: hidden;
+}
+.fy-myorder .left .box .title{
+	width: 178px;
+	border-left: 2px solid #D81E06;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 10px;
+	font-weight: bold;
+	
+}
+.fy-myorder .left .box .title img{
+	width: 16px;
+	height: 16px;
+	margin-bottom: -2px;
+	margin-right: 10px;
+}
+.fy-myorder .left .box a{
+	border-top: 1px solid #DCDCDC;
+	display: block;
+	width: 100%;
+	padding-left: 10px;
+	height: 44px;
+	line-height: 44px;
+	border-left: 2px solid #fff;
+}
+.fy-myorder .left .box a img{
+	width: 16px;
+	height: 16px;
+	margin-bottom: -2px;
+	margin-right: 10px;
+}
+.fy-myorder .right{
+	float: right;
+	width: 940px;
+	border: 1px solid #DCDCDC;
+	overflow: hidden;
+}
+.fy-myorder .right .title{
+	height: 40px;
+	width: 100%;
+	padding-left: 20px;
+	border-bottom: 1px solid #D81E06;
+	line-height: 40px;
+	font-size: 18px;
+}
+.fy-myorder .right .tabs{
+	height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #DCDCDC;
+	padding-left: 20px;
+}
+
+.fy-myorder .right .tabs a{
+	display: block;
+	float: left;
+	border-bottom: 2px solid #fff;
+	height: 58px;
+	line-height: 58px;
+	padding: 0px 30px;
+	font-size: 16px;
+	
+}
+.fy-myorder .right .tabs .active{
+	border-bottom: 2px solid #D81E06;
+	color: #D81E06;
+}
+.fy-myorder .right .order{
+	width: 100%;
+	vertical-align: middle;
+	table-layout: fixed;
+}
+.fy-myorder .right .order tr{width: 100%;
+	
+}
+.fy-myorder .right .order td{
+	text-align: center;
+	padding: 20px;
+	border-bottom: 1px solid #DCDCDC;	
+	border-right: 1px solid #DCDCDC;	
+}
+.fy-myorder .right .order .time{
+	text-align: left;
+}
+.fy-myorder .right .order .product{
+	height: 100px;
+	overflow: hidden;
+	float: left;
+	width: 360px;
+}
+.fy-myorder .right .order .product img{
+	width: 98px;
+	height: 98px;
+	border: 1px solid #DCDCDC;
+	float: left;
+}
+.fy-myorder .right .order .product span{
+	float: left;
+	line-height: 22px;
+	margin-top: 39px;
+	margin-left: 10px;
+}
+
+
+.fy-login{
+	width: 1200px;
+	margin: 100px auto;
+	overflow: hidden;
+	margin-bottom: 250px;
+}
+.fy-login .left{
+	width: 699px;
+	float: left;
+}
+.fy-login .right{
+	width: 500px;
+	float: right;
+	border-left: 1px solid #DCDCDC;
+}
+.fy-login .right form{
+	width:400px;
+	margin-left: 50px;
+	
+}
+.fy-login .right form .title{
+	line-height: 50px;
+	font-size: 22px;
+	color: #D81E06;
+	font-weight: bold;
+	border-bottom: 1px solid #DCDCDC;
+	display: block;
+}
+.fy-login .right form input[type="text"],.fy-login .right form input[type="password"]{
+	width: 379px;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	padding: 0px 10px;
+	height: 40px;
+	margin-top: 20px;
+}
+.fy-login .right form .link{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	text-align: right;
+}
+.fy-login .right form .link a{
+	color: #D81E06;
+	font-size: 12px;
+	text-decoration: underline;
+}
+.fy-login .right form input[type="submit"]{
+	width: 400px;
+	border: none;
+	outline: none;
+	text-align: center;
+	background-color: #D81E06;
+	color: white;
+	font-size: 18px;
+	height: 40px;
+	border-radius: 4px;
+}

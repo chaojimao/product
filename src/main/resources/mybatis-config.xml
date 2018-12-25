@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC 
+"-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<!-- 打印查询语句 -->
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+	</settings>
+	
+	<typeAliases>
+
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="com/user/UserMapper.xml" />
+        <mapper resource="com/admin/AdminMapper.xml" />
+        <mapper resource="com/goods/DesMapper.xml" />
+        <mapper resource="com/product/ProMapper.xml" />
+        <mapper resource="com/pic/PicMapper.xml" />
+        <mapper resource="com/order/OrderMapper.xml" />
+         <mapper resource="com/ddgoods/GoodsMapper.xml" />
+          <mapper resource="com/dict/DictMapper.xml" />
+           <mapper resource="com/addr/AddrMapper.xml" />
+           <mapper resource="com/cart/CartMapper.xml" />
+	</mappers>
+
+</configuration>
